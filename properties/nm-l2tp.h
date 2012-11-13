@@ -35,6 +35,12 @@ typedef enum
 	L2TP_PLUGIN_UI_ERROR_FILE_NOT_L2TP
 } L2tpPluginUiError;
 
+typedef enum {
+	NM_CONNECTION_SCOPE_UNKNOWN = 0,
+	NM_CONNECTION_SCOPE_SYSTEM,
+	NM_CONNECTION_SCOPE_USER
+} NMConnectionScope;
+
 #define L2TP_TYPE_PLUGIN_UI_ERROR (l2tp_plugin_ui_error_get_type ()) 
 GType l2tp_plugin_ui_error_get_type (void);
 
