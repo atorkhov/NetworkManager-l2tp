@@ -1,6 +1,6 @@
 AC_PREREQ(2.59)
 
-AC_INIT(NetworkManager-l2tp, 0.1, atorkhov@gmail.com, NetworkManager-l2tp)
+AC_INIT(NetworkManager-l2tp, 0.9.8.5, root@seriyps.ru, NetworkManager-l2tp)
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-bzip2 subdir-objects])
 AM_MAINTAINER_MODE
 
@@ -30,7 +30,7 @@ AC_ARG_WITH([pppd-plugin-dir], AS_HELP_STRING([--with-pppd-plugin-dir=DIR], [pat
 if test -n "$with_pppd_plugin_dir" ; then
 	PPPD_PLUGIN_DIR="$with_pppd_plugin_dir"
 else
-	PPPD_PLUGIN_DIR="${libdir}/pppd/2.4.4"
+	PPPD_PLUGIN_DIR="${libdir}/pppd/2.4.5"
 fi
 AC_SUBST(PPPD_PLUGIN_DIR)
 
@@ -61,34 +61,26 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
 IT_PROG_INTLTOOL([0.35])
 AM_GLIB_GNU_GETTEXT
 
-PKG_CHECK_MODULES(GTHREAD, gthread-2.0)
-AC_SUBST(GTHREAD_CFLAGS)
-AC_SUBST(GTHREAD_LIBS)
+PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.32)
+AC_SUBST(GLIB_CFLAGS)
+AC_SUBST(GLIB_LIBS)
+GLIB_CFLAGS="$GLIB_CFLAGS -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_32"
 
-PKG_CHECK_MODULES(DBUS, dbus-glib-1 >= 0.74)
-AC_SUBST(DBUS_GLIB_CFLAGS)
-AC_SUBST(DBUS_GLIB_LIBS)
+PKG_CHECK_MODULES(DBUS_GLIB, dbus-glib-1 >= 0.74)
 
-PKG_CHECK_MODULES(NM_UTILS, NetworkManager >= 0.8.1 libnm-util libnm-glib libnm-glib-vpn)
-AC_SUBST(NM_UTILS_CFLAGS)
-AC_SUBST(NM_UTILS_LIBS)
+PKG_CHECK_MODULES(NM,
+                  NetworkManager >= 0.9.8
+                  libnm-util >= 0.9.8
+                  libnm-glib >= 0.9.8
+                  libnm-glib-vpn >= 0.9.8)
+AC_SUBST(NM_CFLAGS)
+AC_SUBST(NM_LIBS)
 
 if test x"$with_gnome" != xno; then
-	PKG_CHECK_MODULES(GTK, gtk+-2.0 >= 2.6)
+	PKG_CHECK_MODULES(GTK, gtk+-3.0 >= 3.4)
 	AC_SUBST(GTK_CFLAGS)
 	AC_SUBST(GTK_LIBS)
-
-	PKG_CHECK_MODULES(GDK_PIXBUF, gdk-pixbuf-2.0)
-	AC_SUBST(GDK_PIXBUF_CFLAGS)
-	AC_SUBST(GDK_PIXBUF_LIBS)
-
-	PKG_CHECK_MODULES(GLADE, libglade-2.0)
-	AC_SUBST(GLADE_CFLAGS)
-	AC_SUBST(GLADE_LIBS)
-
-	PKG_CHECK_MODULES(GCONF, gconf-2.0)
-	AC_SUBST(GCONF_CFLAGS)
-	AC_SUBST(GCONF_LIBS)
+	GTK_CFLAGS="$GTK_CFLAGS -DGDK_VERSION_MIN_REQUIRED=GDK_VERSION_3_4"
 
 	PKG_CHECK_MODULES(GNOMEKEYRING, gnome-keyring-1)
 	AC_SUBST(GNOMEKEYRING_CFLAGS)
@@ -97,10 +89,17 @@ fi
 
 NM_COMPILER_WARNINGS
 
+dnl
+dnl Distribution version string
+dnl
+AC_ARG_WITH(dist-version, AS_HELP_STRING([--with-dist-version=<dist-version>], [Define the custom version (like distribution package name and revision)]), ac_distver=$withval, ac_distver="")
+if ! test x"$ac_distver" = x""; then
+  AC_DEFINE_UNQUOTED(DIST_VERSION, "$ac_distver", [Define the distribution version string])
+fi
+
 AC_CONFIG_FILES([
 Makefile
 src/Makefile
-common-gnome/Makefile
 auth-dialog/Makefile
 properties/Makefile
 po/Makefile.in

@@ -1,7 +1,7 @@
 /* -*- Mode: C; tab-width: 4; indent-tabs-mode: t; c-basic-offset: 4 -*- */
-/* NetworkManager Wireless Applet -- Display wireless access points and allow user control
+/***************************************************************************
  *
- * Dan Williams <dcbw@redhat.com>
+ * Copyright (C) 2011 Geo Carncross, <geocar@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,31 +17,20 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *
- * (C) Copyright 2004 - 2008 Red Hat, Inc.
- */
+ **************************************************************************/
 
-#ifndef KEYRING_HELPERS_H
-#define KEYRING_HELPERS_H
+#ifndef _IPSEC_DIALOG_H_
+#define _IPSEC_DIALOG_H_
 
 #include <glib.h>
-#include <gnome-keyring.h>
-#include <gnome-keyring-memory.h>
+#include <gtk/gtk.h>
 
-char *keyring_helpers_lookup_secret (
-		const char *vpn_uuid,
-		const char *secret_name,
-		gboolean *is_session);
+#include <nm-connection.h>
 
-GnomeKeyringResult keyring_helpers_save_secret (
-		const char *vpn_uuid,
-		const char *vpn_name,
-		const char *keyring,
-		const char *secret_name,
-		const char *secret);
+GtkWidget *ipsec_dialog_new (GHashTable *hash);
 
-gboolean keyring_helpers_delete_secret (
-		const char *vpn_uuid,
-		const char *secret_name);
+GHashTable *ipsec_dialog_new_hash_from_connection (NMConnection *connection, GError **error);
 
-#endif  /* KEYRING_HELPERS_H */
+GHashTable *ipsec_dialog_new_hash_from_dialog (GtkWidget *dialog, GError **error);
 
+#endif

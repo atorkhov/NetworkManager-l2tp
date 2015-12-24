@@ -3,7 +3,7 @@ AUTOMAKE_OPTIONS = foreign
 SUBDIRS = src
 
 if WITH_GNOME
-SUBDIRS += common-gnome auth-dialog properties po
+SUBDIRS += auth-dialog properties po
 endif
 
 dbusservicedir = $(sysconfdir)/dbus-1/system.d
@@ -27,7 +27,11 @@ if WITH_GNOME
 endif
 
 nm-l2tp-service.name: $(srcdir)/nm-l2tp-service.name.in
-	sed -e 's|[@]LIBEXECDIR[@]|$(libexecdir)|g' $< >$@
+	sed -e 's|[@]LIBEXECDIR[@]|$(libexecdir)|g' \
+	    -e 's|[@]PLUGINDIR[@]|$(libdir)/NetworkManager|g' \
+	    $< >$@
+
+DISTCHECK_CONFIGURE_FLAGS = --enable-more-warnings=yes
 
 EXTRA_DIST = nm-l2tp-service.name.in \
              $(dbusservice_DATA)  \

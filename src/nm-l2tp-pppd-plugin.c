@@ -230,13 +230,13 @@ nm_ip_up (void *data, int arg)
 }
 
 static int
-get_chap_check()
+get_chap_check(void)
 {
 	return 1;
 }
 
 static int
-get_pap_check()
+get_pap_check(void)
 {
 	return 1;
 }
@@ -315,7 +315,9 @@ plugin_init (void)
 	DBusGConnection *bus;
 	GError *err = NULL;
 
+#if !GLIB_CHECK_VERSION (2, 35, 0)
 	g_type_init ();
+#endif
 
 	g_message ("nm-l2tp-ppp-plugin: (%s): initializing", __func__);
 

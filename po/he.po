@@ -7,552 +7,876 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-17 11:40+0000\n"
+"POT-Creation-Date: 2014-05-01 21:31+0400\n"
 "PO-Revision-Date: 2008-02-17 03:56+0000\n"
 "Last-Translator: Yair Hershkovitz <yairhr@gmail.com>\n"
 "Language-Team: he\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../auth-dialog-general/gnome-generic-auth-dialog.c:792
-msgid "Authentication Type:"
-msgstr "סוג אימות:"
-
-#: ../auth-dialog-general/gnome-generic-auth-dialog.c:857
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:11
-msgid "_Remember for this session"
-msgstr "_זכור עבור הפעלה זו"
-
-#: ../auth-dialog-general/gnome-generic-auth-dialog.c:859
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:13
-msgid "_Save in keyring"
-msgstr "_שמור בקבוצת המפתחות"
-
-#: ../auth-dialog-general/main.c:48 ../auth-dialog/main.c:140
+#. Otherwise, we have no saved password, or the password flags indicated
+#. * that the password should never be saved.
+#.
+#: ../auth-dialog/main.c:141
 #, c-format
-msgid "You need to authenticate to access '%s'."
+msgid "You need to authenticate to access the Virtual Private Network '%s'."
 msgstr ""
 
-#: ../auth-dialog-general/main.c:51 ../auth-dialog/main.c:141
-msgid "Authenticate Connection"
-msgstr "אמת חיבור"
+#: ../auth-dialog/main.c:150 ../auth-dialog/main.c:170
+#, fuzzy
+msgid "Authenticate VPN"
+msgstr "אימות"
 
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:2
-#, no-c-format
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Authentication Information</span>\n"
-"\n"
-"The connection '%s' may need some form of authentication.\n"
-"\n"
-"Please select an appropriate authentication type and provide the necessary "
-"credentials below:\n"
-msgstr ""
+#: ../auth-dialog/main.c:152 ../properties/nm-l2tp-dialog.ui.h:49
+#, fuzzy
+msgid "Password:"
+msgstr "_סיסמה:"
 
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:8
-msgid "Authentication Required"
-msgstr "נדרש אימות"
-
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:9
-msgid "_Authentication Type:"
-msgstr "_סוג אימות:"
-
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:10
-#: ../auth-dialog/gnome-two-password-dialog.c:263
+#: ../auth-dialog/vpn-password-dialog.c:95
 msgid "_Password:"
 msgstr "_סיסמה:"
 
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:12
-msgid "_Remote name:"
-msgstr "שם _מרוחק:"
-
-#: ../auth-dialog-general/nm-ppp-auth.glade.h:14
-#: ../auth-dialog/gnome-two-password-dialog.c:259
-msgid "_Username:"
-msgstr "שם _משתמש:"
-
-#: ../auth-dialog/gnome-two-password-dialog.c:144
+#: ../auth-dialog/vpn-password-dialog.c:97
 msgid "_Secondary Password:"
 msgstr "סיסמה _משנית:"
 
-#: ../auth-dialog/gnome-two-password-dialog.c:261
-msgid "_Domain:"
-msgstr "_מתחם:"
+#: ../auth-dialog/vpn-password-dialog.c:236
+#, fuzzy
+msgid "Sh_ow passwords"
+msgstr "_סיסמה:"
 
-#: ../auth-dialog/gnome-two-password-dialog.c:352
-msgid "Connect _anonymously"
-msgstr "התחבר כ_אנונימי"
+#: ../nm-l2tp.desktop.in.h:1
+#, fuzzy
+msgid "L2TP VPN Connection Manager"
+msgstr "חיבור VPN נכשל"
 
-#: ../auth-dialog/gnome-two-password-dialog.c:357
-msgid "Connect as _user:"
-msgstr "התחבר כ_משתמש:"
-
-#: ../auth-dialog/gnome-two-password-dialog.c:466
-msgid "_Remember password for this session"
-msgstr "_זכור את הסיסמה עבור הפעלה זו"
-
-#: ../auth-dialog/gnome-two-password-dialog.c:468
-msgid "_Save password in keyring"
-msgstr "_שמור את הסיסמה בקבוצת המפתחות"
-
-#: ../nm-ppp.desktop.in.h:1
-msgid "Add, Remove, and Edit VPN Connections"
+#: ../nm-l2tp.desktop.in.h:2
+#, fuzzy
+msgid "Add, Remove, and Edit L2TP VPN Connections"
 msgstr "הוסף, הסר וערוך חיבורי VPN"
 
-#: ../nm-ppp.desktop.in.h:2
-msgid "VPN Connection Manager (PPP generic)"
-msgstr "מנהל חיבורי VPN ‏(PPP כללי)"
-
-#: ../properties/nm-ppp-dialog.glade.h:1
-msgid "00:00:00:00"
-msgstr "00:00:00:00"
-
-#: ../properties/nm-ppp-dialog.glade.h:2
-msgid "<b>Compression</b>"
-msgstr "<b>כיווץ</b>"
-
-#: ../properties/nm-ppp-dialog.glade.h:3
-msgid "<b>Delays &amp; Timeouts</b>"
+#: ../properties/advanced-dialog.c:186
+msgid "All Available (Default)"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:4
-msgid "<b>Encryption</b>"
-msgstr "<b>הצפנה</b>"
-
-#: ../properties/nm-ppp-dialog.glade.h:5
-msgid "<b>IP Options</b>"
-msgstr "<b>אפשרויות IP</b>"
-
-#: ../properties/nm-ppp-dialog.glade.h:6
-msgid "<b>Packet Parameters</b>"
-msgstr "<b>אפשרויות חבילה</b>"
-
-#: ../properties/nm-ppp-dialog.glade.h:7
-msgid "<i>Example: 172.16.0.0/16 10.11.12.0/24</i>"
-msgstr "<i>דוגמה: 172.16.0.0/16 10.11.12.0/24</i>"
-
-#: ../properties/nm-ppp-dialog.glade.h:8
-msgid "A list of extra options to pppd as would be typed on the command line"
-msgstr "רשימה של אפשרויות נוספות עבור pppd כפי שהן נרשמות בשורת הפקודה"
-
-#: ../properties/nm-ppp-dialog.glade.h:9
-msgid "Allow B_SD Compression"
-msgstr "אפשר כיווץ _BSD"
-
-#: ../properties/nm-ppp-dialog.glade.h:10
-msgid "Allow _Deflate compression"
+#: ../properties/advanced-dialog.c:190
+msgid "128-bit (most secure)"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:11
-msgid "Authentication"
-msgstr "אימות"
-
-#: ../properties/nm-ppp-dialog.glade.h:12
-msgid "C_hannel:"
-msgstr "_ערוץ:"
-
-#: ../properties/nm-ppp-dialog.glade.h:13
-msgid "Co_nnect delay:"
+#: ../properties/advanced-dialog.c:199
+msgid "40-bit (less secure)"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:14
-msgid "Compression & Encryption"
-msgstr "כיווץ והצפנה"
-
-#: ../properties/nm-ppp-dialog.glade.h:15
-msgid "Connection"
-msgstr "חיבור"
-
-#: ../properties/nm-ppp-dialog.glade.h:16
-msgid "Connection na_me:"
-msgstr "_שם חיבור:"
-
-#: ../properties/nm-ppp-dialog.glade.h:17
-msgid "Context _number:"
+#: ../properties/advanced-dialog.c:303
+msgid "PAP"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:18
-msgid "Custom _PPP options:"
-msgstr "אפשרויות _PPP מותאמות:"
-
-#: ../properties/nm-ppp-dialog.glade.h:19
-msgid "Debug _output"
-msgstr "_פלט ניפוי"
-
-#: ../properties/nm-ppp-dialog.glade.h:20
-msgid "Disconnect after this many LCP echo requests fail"
+#: ../properties/advanced-dialog.c:316
+msgid "CHAP"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:21
-msgid "E_xclusive device access (UUCP-style lock)"
+#: ../properties/advanced-dialog.c:328
+#, fuzzy
+msgid "MSCHAP"
+msgstr "דחה NSCHAP"
+
+#: ../properties/advanced-dialog.c:340
+msgid "MSCHAPv2"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:22
-msgid "Enable stateful _MPPE"
+#: ../properties/advanced-dialog.c:353
+msgid "EAP"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:23
-msgid "Find Device"
-msgstr "חפש התקן"
+#: ../properties/import-export.c:166 ../properties/import-export.c:417
+#, c-format
+msgid "Required property %s missing"
+msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:24
+#: ../properties/import-export.c:187
+#, c-format
+msgid "Property %s value '%s' can't be parsed as boolean."
+msgstr ""
+
+#: ../properties/import-export.c:210 ../properties/import-export.c:267
+#: ../properties/import-export.c:309
+#, c-format
+msgid "Property '%s' value '%s' can't be parsed as ip adress."
+msgstr ""
+
+#: ../properties/import-export.c:256
+#, c-format
+msgid "Property '%s' value '%s' couldn't find netmask."
+msgstr ""
+
+#: ../properties/import-export.c:286
+#, c-format
+msgid "Property '%s' value '%s' can't be parsed as ip netmask."
+msgstr ""
+
+#: ../properties/import-export.c:335
+#, c-format
+msgid "Property '%s' value '%s' can't be parsed as route metric."
+msgstr ""
+
+#: ../properties/import-export.c:347
+#, c-format
+msgid "Error parsing property '%s' value '%s'."
+msgstr ""
+
+#: ../properties/import-export.c:382
+#, c-format
+msgid "does not look like a L2TP VPN connection (parse failed)"
+msgstr ""
+
+#: ../properties/import-export.c:435
+#, c-format
+msgid "Property %s can't be parsed as integer."
+msgstr ""
+
+#: ../properties/import-export.c:452
+#, c-format
 msgid ""
-"For security reasons, options entered in the box above are checked against a "
-"list of allowed options before a connection is established.  Currently there "
-"are no options on the list."
+"Property %s can't be parsed as boolean. Only 'true' and 'false' allowed."
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:25
-msgid "GPRS Options"
-msgstr "אפשרויות GPRS"
-
-#: ../properties/nm-ppp-dialog.glade.h:26
-msgid "Host name or IP address of the L2TP server"
-msgstr "שם מארח או כתובת IP של שרת ה-L2TP"
-
-#: ../properties/nm-ppp-dialog.glade.h:27
-msgid "IP a_ddress:"
-msgstr "כתובת _IP:"
-
-#: ../properties/nm-ppp-dialog.glade.h:28
-msgid ""
-"If BSD compression is not allowed the 'nobsdcomp' option is passed to pppd"
-msgstr "אם כיווץ BSD אינו מורשה האפשרות 'nobsdcomp' מועברת ל-pppd"
-
-#: ../properties/nm-ppp-dialog.glade.h:29
-msgid ""
-"If Deflate compression is not allowed the 'nodefate' option is passed to pppd"
+#: ../properties/import-export.c:624
+#, c-format
+msgid "Missing required property '%s'"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:30
-msgid "Maximum Receive Unit"
-msgstr "גודל יחידת קבלה מקסימאלי"
+#: ../properties/import-export.c:654
+#, c-format
+msgid "Couldn't open file for writing."
+msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:31
-msgid "Maximum Transmit Unit"
-msgstr "גודל יחידת שליחה מקסימאלי"
+#: ../properties/nm-l2tp.c:50
+msgid "Layer 2 Tunneling Protocol (L2TP)"
+msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:32
-msgid "PPP Options"
+#: ../properties/nm-l2tp.c:51
+msgid "Compatible with L2TP VPN servers."
+msgstr ""
+
+#: ../properties/nm-l2tp.c:220
+#, c-format
+msgid "%s: error reading advanced settings: %s"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:244
+#, c-format
+msgid "%s: error reading ipsec settings: %s"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:264
+#, c-format
+msgid "%s: failed to create the Advanced dialog!"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:293
+#, c-format
+msgid "%s: failed to create the IPSEC dialog!"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:412
+msgid "Saved"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:420
+msgid "Always Ask"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:425
+msgid "Not Required"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:649
+#, c-format
+msgid "could not create l2tp object"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:661
+#, c-format
+msgid "Couldn't load builder file: %s"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:665
+#, c-format
+msgid "could not load required resources at %s"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:675
+#, c-format
+msgid "could not load UI widget"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:768
+#, c-format
+msgid "unknown L2TP file extension"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:776
+#, c-format
+msgid "unknown L2TP file extension. Allowed .conf or .cnf"
+msgstr ""
+
+#: ../properties/nm-l2tp.c:784
+#, c-format
+msgid "Filename doesn't contains 'l2tp' substring."
+msgstr ""
+
+#: ../properties/nm-l2tp.c:791
+#, c-format
+msgid "Can't import file as L2TP config: %s"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:1
+#, fuzzy
+msgid "L2TP PPP Options"
 msgstr "אפשרויות PPP"
 
-#: ../properties/nm-ppp-dialog.glade.h:33
-msgid "Refuse C_HAP"
-msgstr "דחה C_HAP"
+#: ../properties/nm-l2tp-dialog.ui.h:2
+#, fuzzy
+msgid "<b>Authentication</b>"
+msgstr "<b>הצפנה</b>"
 
-#: ../properties/nm-ppp-dialog.glade.h:34
-msgid "Refuse _EAP"
-msgstr "דחה _EAP"
-
-#: ../properties/nm-ppp-dialog.glade.h:35
-msgid "Refuse _MS CHAP"
-msgstr "דחה _MS CHAP"
-
-#: ../properties/nm-ppp-dialog.glade.h:36
-msgid "Require 128 bit M_PPE encryption"
-msgstr "דרוש הצפנת M_PPE ‏128 סיבית"
-
-#: ../properties/nm-ppp-dialog.glade.h:37
-msgid "Require MPPE _encryption"
-msgstr "דרוש הצפנת _MPPE"
-
-#: ../properties/nm-ppp-dialog.glade.h:38
-msgid "Require explicit IP _address"
+#: ../properties/nm-l2tp-dialog.ui.h:3
+msgid "Allow the following authentication methods:"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:39
-msgid "Requires existing network connection"
-msgstr ""
-
-#: ../properties/nm-ppp-dialog.glade.h:40
-msgid "Routing"
-msgstr "ניתוב"
-
-#: ../properties/nm-ppp-dialog.glade.h:41
-msgid "Serial Options"
-msgstr "אפשרויות חיבור טורי"
-
-#: ../properties/nm-ppp-dialog.glade.h:42
-msgid "Service providers GPRS access point from device config"
-msgstr ""
-
-#: ../properties/nm-ppp-dialog.glade.h:43
-msgid "Service providers IP address"
-msgstr "כתובת IP של ספק השירות"
-
-#: ../properties/nm-ppp-dialog.glade.h:44
-msgid "Telep_hone number:"
-msgstr "מספר ט_לפון:"
-
-#: ../properties/nm-ppp-dialog.glade.h:45
+#: ../properties/nm-l2tp-dialog.ui.h:4
 msgid ""
-"This is the friendly name that will be used to identify this network "
-"connection, \n"
-"e.g. \"Campus VPN\" or \"Corporate Network\""
+"Allow/disable authentication methods.\n"
+"config: refuse-pap, refuse-chap, refuse-mschap, refuse-mschap-v2, refuse-eap"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:47
-msgid "Time in seconds between echo requests"
-msgstr "הזמן בשניות בין בקשות הד"
+#: ../properties/nm-l2tp-dialog.ui.h:6
+#, fuzzy
+msgid "<b>Security and Compression</b>"
+msgstr "<b>כיווץ</b>"
 
-#: ../properties/nm-ppp-dialog.glade.h:48
-msgid "Typ_e:"
-msgstr "_סוג:"
+#: ../properties/nm-l2tp-dialog.ui.h:7
+#, fuzzy
+msgid "Use _Point-to-Point encryption (MPPE)"
+msgstr "השתמש בהצפנת MPPE"
 
-#: ../properties/nm-ppp-dialog.glade.h:49
-msgid "Use peer _DNS"
-msgstr ""
-
-#: ../properties/nm-ppp-dialog.glade.h:50
-msgid "When checked the \"refuse-chap\" option is passed to pppd."
-msgstr "כאשר מסומן האפשרות \"refuse-chap\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:51
-msgid "When checked the \"refuse-eap\" option is passed to pppd."
-msgstr "כאשר מסומן האפשרות \"refuse-eap\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:52
-msgid "When checked the \"refuse-mschap\" option is passed to pppd."
-msgstr "כאשר מסומן האפשרות \"refuse-mschap\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:53
-msgid "When checked the 'lock' option is passed to pppd"
-msgstr "כאשר מסומן האפשרות \"lock\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:54
-msgid "When checked the 'require-mppc' option is passed to pppd"
-msgstr "כאשר מסומן האפשרות \"require-mppc\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:55
+#: ../properties/nm-l2tp-dialog.ui.h:8
 msgid ""
-"When checked this sets the pppd 'debug' option and adds some extra "
-"information from the NetworkManager plugin"
+"Note: MPPE encryption is only available with MSCHAP authentication methods. "
+"To enable this checkbox, select one or more of the MSCHAP authentication "
+"methods: MSCHAP or MSCHAPv2."
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:56
-msgid "When checked this sets the pppd 'noipdefault' option"
-msgstr "כאשר מסומן האפשרות \"noipdefault\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:57
-msgid "When checked this sets the pppd 'usepeerdns' option"
-msgstr "כאשר מסומן האפשרות \"usepeerdns\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:58
-msgid "When this check box is cleared the \"noauth\" option is passed to pppd."
-msgstr "כאשר מסומן האפשרות \"noauth\" מועברת ל-pppd."
-
-#: ../properties/nm-ppp-dialog.glade.h:59
-msgid "_Access point name:"
-msgstr "שם _נקודת גישה:"
-
-#: ../properties/nm-ppp-dialog.glade.h:60
-msgid "_Authenticate peer"
+#: ../properties/nm-l2tp-dialog.ui.h:9
+msgid "_Security:"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:61
-msgid "_Device address:"
-msgstr "_כתובת התקן:"
+#: ../properties/nm-l2tp-dialog.ui.h:10
+msgid ""
+"Require the use of MPPE, with 40/128-bit encryption or all.\n"
+"config: require-mppe, require-mppe-128 or require-mppe-40"
+msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:62
+#: ../properties/nm-l2tp-dialog.ui.h:12
+msgid "Allow st_ateful encryption"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:13
+msgid ""
+"Allow MPPE to use stateful mode. Stateless mode is still attempted first.\n"
+"config: mppe-stateful (when checked)"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:15
+#, fuzzy
+msgid "Allow _BSD data compression"
+msgstr "אפשר כיווץ _BSD"
+
+#: ../properties/nm-l2tp-dialog.ui.h:16
+msgid ""
+"Allow/disable BSD-Compress compression.\n"
+"config: nobsdcomp (when unchecked)"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:18
+#, fuzzy
+msgid "Allow _Deflate data compression"
+msgstr "אפשר כיווץ _BSD"
+
+#: ../properties/nm-l2tp-dialog.ui.h:19
+msgid ""
+"Allow/disable Deflate compression.\n"
+"config: nodeflate (when unchecked)"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:21
+#, fuzzy
+msgid "Use TCP _header compression"
+msgstr "השתמש בהצפנת MPPC"
+
+#: ../properties/nm-l2tp-dialog.ui.h:22
+msgid ""
+"Allow/disable Van Jacobson style TCP/IP header compression in both the "
+"transmit and the receive directions.\n"
+"config: novj (when unchecked)"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:24
+msgid "Use protocol _field compression negotiation"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:25
+msgid ""
+"Allow protocol field compression negotiation in both the receive and the "
+"transmit direction.\n"
+"config: nopcomp (when unchecked)"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:27
+#, fuzzy
+msgid "Use _Address/Control compression"
+msgstr "השתמש בהצפנת MPPC"
+
+#: ../properties/nm-l2tp-dialog.ui.h:28
+msgid ""
+"Use Address/Control compression in both directions (send and receive).\n"
+"config: noaccomp (when unchecked)"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:30
+#, fuzzy
+msgid "<b>Echo</b>"
+msgstr "<b>הצפנה</b>"
+
+#: ../properties/nm-l2tp-dialog.ui.h:31
+msgid "Send PPP _echo packets"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:32
+msgid ""
+"Send LCP echo-requests to find out whether peer is alive.\n"
+"config: lcp-echo-failure and lcp-echo-interval"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:34
+#, fuzzy
+msgid "L2TP IPSEC Options"
+msgstr "אפשרויות PPP"
+
+#: ../properties/nm-l2tp-dialog.ui.h:35
+msgid "_Enable IPsec tunnel to L2TP host"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:36
+msgid "Group Name:"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:37
+msgid "Gateway ID:"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:38
+msgid "Pre-shared key:"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:39
+msgid "<b>General</b>"
+msgstr ""
+
+#: ../properties/nm-l2tp-dialog.ui.h:40
 msgid "_Gateway:"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:63
-msgid "_Hardware RTS/CTS"
+#: ../properties/nm-l2tp-dialog.ui.h:41
+msgid ""
+"L2TP server IP or name.\n"
+"config: xl2tpd lns parameter"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:64
-msgid "_Import Saved Configuration..."
-msgstr "_יבא הגדרות שמורות..."
+#: ../properties/nm-l2tp-dialog.ui.h:43
+#, fuzzy
+msgid "<b>Optional</b>"
+msgstr "<b>אפשרויות IP</b>"
 
-#: ../properties/nm-ppp-dialog.glade.h:65
-msgid "_Modem connection"
-msgstr "חיבור _מודם"
-
-#: ../properties/nm-ppp-dialog.glade.h:66
-msgid "_Only use VPN connection for these addresses:"
+#: ../properties/nm-l2tp-dialog.ui.h:44
+msgid ""
+"Append the domain name <domain> to the local host name for authentication "
+"purposes.\n"
+"config: domain <domain>"
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:67
-msgid "_Packet type:"
-msgstr "_סוג חבילה:"
+#: ../properties/nm-l2tp-dialog.ui.h:46
+#, fuzzy
+msgid "NT Domain:"
+msgstr "_מתחם:"
 
-#: ../properties/nm-ppp-dialog.glade.h:68
-msgid "_Peer DNS through tunnel"
+#: ../properties/nm-l2tp-dialog.ui.h:47
+#, fuzzy
+msgid "Show password"
+msgstr "_סיסמה:"
+
+#: ../properties/nm-l2tp-dialog.ui.h:48
+msgid "Password passed to PPPD when prompted for it."
 msgstr ""
 
-#: ../properties/nm-ppp-dialog.glade.h:69
-msgid "_Require MPPC compression"
-msgstr "דרוש כיווץ _MPPC"
-
-#: ../properties/nm-ppp-properties.c:45
-msgid "pppd tunnel (L2TP, BTGPRS, Dialup)"
+#: ../properties/nm-l2tp-dialog.ui.h:50
+msgid ""
+"Set the name used for authenticating the local system to the peer to "
+"<name>.\n"
+"config: xl2tpd name parameter"
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:134
-msgid "Name"
-msgstr "שם"
+#: ../properties/nm-l2tp-dialog.ui.h:52
+#, fuzzy
+msgid "User name:"
+msgstr "שם _משתמש:"
 
-#: ../properties/nm-ppp-properties.c:146
-msgid "L2TP Server"
-msgstr "שרת L2TP"
-
-#: ../properties/nm-ppp-properties.c:151
-msgid "Telephone Number"
-msgstr "מספר טלפון"
-
-#: ../properties/nm-ppp-properties.c:156
-msgid "Bluetooth Address"
-msgstr "כתובת Bluetooth"
-
-#: ../properties/nm-ppp-properties.c:161
-msgid "Bluetooth Channel"
-msgstr "ערוץ Bluetooth"
-
-#: ../properties/nm-ppp-properties.c:166
-msgid "GPRS APN"
-msgstr "GPRS APN"
-
-#: ../properties/nm-ppp-properties.c:171
-msgid "GPRS IP"
-msgstr "GPRS IP"
-
-#: ../properties/nm-ppp-properties.c:176
-msgid "GPRS Context No."
+#: ../properties/nm-l2tp-dialog.ui.h:53
+msgid "_IPsec Settings..."
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:181
-msgid "GPRS Packet Type"
+#: ../properties/nm-l2tp-dialog.ui.h:54
+msgid "PPP Se_ttings..."
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:186
-msgid "Use CTS/RTS flow control"
+#: ../properties/nm-l2tp-dialog.ui.h:55
+msgid "Default"
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:191
-msgid "Connect via a modem"
-msgstr "התחבר בעזרת מודם"
-
-#: ../properties/nm-ppp-properties.c:196
-msgid "Require IP to be provided"
+#: ../src/nm-l2tp-service.c:149
+msgid "Could not find secrets (connection invalid, no vpn setting)."
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:201
-msgid "Use Peer DNS"
+#: ../src/nm-l2tp-service.c:161
+msgid "Invalid VPN username."
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:206
-msgid "Use MPPE encryption"
-msgstr "השתמש בהצפנת MPPE"
-
-#: ../properties/nm-ppp-properties.c:211
-msgid "Use 128 bit MPPE encryption"
-msgstr "השתמש בהצפנת MPPE 128bit"
-
-#: ../properties/nm-ppp-properties.c:216
-msgid "Enable stateful MPPE"
+#: ../src/nm-l2tp-service.c:170
+msgid "Missing VPN username."
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:221
-msgid "Use MPPC compression"
-msgstr "השתמש בהצפנת MPPC"
-
-#: ../properties/nm-ppp-properties.c:226
-msgid "Do not use deflate compression"
+#: ../src/nm-l2tp-service.c:180
+msgid "Missing or invalid VPN password."
 msgstr ""
 
-#: ../properties/nm-ppp-properties.c:231
-msgid "Do not use BSD compression"
-msgstr "אל תשתמש בכיווץ BSD"
-
-#: ../properties/nm-ppp-properties.c:236
-msgid "Exclusive device access by pppd"
-msgstr ""
-
-#: ../properties/nm-ppp-properties.c:241
-msgid "Authenticate remote peer"
-msgstr ""
-
-#: ../properties/nm-ppp-properties.c:246
-msgid "Refuse EAP"
-msgstr "דחה EAP"
-
-#: ../properties/nm-ppp-properties.c:251
-msgid "Refuse CHAP"
-msgstr "דחה CHAP"
-
-#: ../properties/nm-ppp-properties.c:256
-msgid "Refuse MSCHAP"
-msgstr "דחה NSCHAP"
-
-#: ../properties/nm-ppp-properties.c:261
-msgid "Maximum transmit unit (in bytes)"
-msgstr "גודל יחידת שליחה מקסימאלי (בבתים)"
-
-#: ../properties/nm-ppp-properties.c:266
-msgid "Maximum receive unit (in bytes)"
-msgstr "גודל יחידת קבלה מקסימאלי (בבתים)"
-
-#: ../properties/nm-ppp-properties.c:271
-msgid "Number of failed LCP echos to cause disconnect"
-msgstr ""
-
-#: ../properties/nm-ppp-properties.c:276
-msgid "Interval (in seconds) at which to issue LCP echos"
-msgstr ""
-
-#: ../properties/nm-ppp-properties.c:281
-msgid "Interval (in milliseconds) to wait before connecting."
-msgstr ""
-
-#: ../properties/nm-ppp-properties.c:286
-msgid "Custom PPP options"
-msgstr "אפשרויות PPP מותאמות"
-
-#: ../properties/nm-ppp-properties.c:296
-msgid "Use Peer DNS over the Tunnel"
-msgstr ""
-
-#: ../properties/nm-ppp-properties.c:302
-msgid "Specific networks available"
-msgstr ""
-
-#: ../properties/nm-ppp-properties.c:308
-msgid "Limit to specific networks"
-msgstr ""
-
-#: ../properties/vpnui_impl.c:229
+#: ../src/nm-l2tp-service.c:224
 #, c-format
-msgid "The following '%s' connection will be created:"
-msgstr "חיבור ה-'%s' הבא יווצר:"
-
-#: ../properties/vpnui_impl.c:242
-#, c-format
-msgid "\t%s:  %s\n"
-msgstr "\t%s:  %s\n"
-
-#: ../properties/vpnui_impl.c:245
-msgid "The connection details can be changed using the \"Back\" button."
+msgid "Could not register D-Bus service name.  Message: %s"
 msgstr ""
 
-#: ../properties/vpnui_impl.c:317
-msgid "Select file to import"
-msgstr "בחר קובץ ליבוא"
+#: ../src/nm-l2tp-service.c:307
+msgid "No cached credentials."
+msgstr ""
 
-#. printf ("in impl_export\n");
-#: ../properties/vpnui_impl.c:462
-msgid "Save as..."
-msgstr "שמור בשם..."
+#: ../src/nm-l2tp-service.c:338
+msgid "L2TP service (IP Config Get) reply received."
+msgstr ""
 
-#: ../properties/vpnui_impl.c:491
+#: ../src/nm-l2tp-service.c:485
 #, c-format
-msgid "A file named \"%s\" already exists."
-msgstr "קובץ בשם \"%s\" כבר קיים"
+msgid "invalid gateway '%s'"
+msgstr ""
 
-#: ../properties/vpnui_impl.c:494
-msgid "Do you want to replace it with the one you are saving?"
-msgstr "האם להחליפו בקובץ שאתה מנסה לשמור?"
+#: ../src/nm-l2tp-service.c:494
+#, c-format
+msgid "invalid ipsec-group-name '%s'"
+msgstr ""
 
-#: ../src/nm-ppp-starter.c:141
-msgid "VPN Connection failed"
-msgstr "חיבור VPN נכשל"
+#: ../src/nm-l2tp-service.c:503
+#, c-format
+msgid "invalid ipsec-gateway-id '%s'"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:516
+#, c-format
+msgid "invalid integer property '%s'"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:526
+#, c-format
+msgid "invalid boolean property '%s' (not yes or no)"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:533
+#, c-format
+msgid "unhandled property '%s' type %s"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:544
+#, c-format
+msgid "property '%s' invalid or not supported"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:562
+msgid "No VPN configuration options."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:582
+#, c-format
+msgid "Missing required option '%s'."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:602
+msgid "No VPN secrets!"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:624
+#, c-format
+msgid "xl2tpd exited with error code %d"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:627
+#, c-format
+msgid "xl2tpd stopped unexpectedly with signal %d"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:629
+#, c-format
+msgid "xl2tpd died with signal %d"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:631
+msgid "xl2tpd died from an unknown cause"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:733
+msgid "pppd timeout. Looks like pppd didn't initialize our dbus module"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:770
+#, c-format
+msgid "couldn't convert L2TP VPN gateway IP address '%s' (%d)"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:788
+#, c-format
+msgid "couldn't look up L2TP VPN gateway IP address '%s' (%d)"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:812
+#, c-format
+msgid "no usable addresses returned for L2TP VPN gateway '%s'"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:823
+#, c-format
+msgid "no usable addresses returned for L2TP VPN gateway '%s' (%d)"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:828
+#, c-format
+msgid "Use '%s' as a gateway"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:897
+msgid "Could not find the ipsec binary."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:934
+msgid "Cannot save /etc/ipsec.secrets"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:944
+msgid "Cannot open /etc/ipsec.secrets for writing"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:968
+msgid "ipsec ready for action"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:989
+msgid "Could not find the xl2tpd binary."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1011
+#, c-format
+msgid "xl2tpd started with pid %d"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1071
+msgid "Can-not create new test socket"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1134
+msgid "Could not write ipsec config."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1178
+msgid "Could not write xl2tpd config."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1193
+msgid "Could not write ppp options."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1275
+#, c-format
+msgid "failed to convert lcp-echo-failure value '%s'"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1293
+#, c-format
+msgid "failed to convert lcp-echo-interval value '%s'"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1431
+msgid "Could not start pppd plugin helper service."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1454
+#, c-format
+msgid "ipsec enable flag: %s"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1456
+msgid "starting ipsec"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1521
+#, c-format
+msgid "Terminated l2tp daemon with PID %d."
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1637
+msgid "Don't quit when VPN connection terminates"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1638
+msgid "Enable verbose debug logging (may expose passwords)"
+msgstr ""
+
+#: ../src/nm-l2tp-service.c:1661
+msgid ""
+"nm-l2tp-service provides L2TP VPN capability with optional IPSec support to "
+"NetworkManager."
+msgstr ""
+
+#~ msgid "Authentication Type:"
+#~ msgstr "סוג אימות:"
+
+#~ msgid "_Remember for this session"
+#~ msgstr "_זכור עבור הפעלה זו"
+
+#~ msgid "_Save in keyring"
+#~ msgstr "_שמור בקבוצת המפתחות"
+
+#~ msgid "Authenticate Connection"
+#~ msgstr "אמת חיבור"
+
+#~ msgid "Authentication Required"
+#~ msgstr "נדרש אימות"
+
+#~ msgid "_Authentication Type:"
+#~ msgstr "_סוג אימות:"
+
+#~ msgid "_Remote name:"
+#~ msgstr "שם _מרוחק:"
+
+#~ msgid "Connect _anonymously"
+#~ msgstr "התחבר כ_אנונימי"
+
+#~ msgid "Connect as _user:"
+#~ msgstr "התחבר כ_משתמש:"
+
+#~ msgid "_Remember password for this session"
+#~ msgstr "_זכור את הסיסמה עבור הפעלה זו"
+
+#~ msgid "_Save password in keyring"
+#~ msgstr "_שמור את הסיסמה בקבוצת המפתחות"
+
+#~ msgid "VPN Connection Manager (PPP generic)"
+#~ msgstr "מנהל חיבורי VPN ‏(PPP כללי)"
+
+#~ msgid "00:00:00:00"
+#~ msgstr "00:00:00:00"
+
+#~ msgid "<b>Packet Parameters</b>"
+#~ msgstr "<b>אפשרויות חבילה</b>"
+
+#~ msgid "<i>Example: 172.16.0.0/16 10.11.12.0/24</i>"
+#~ msgstr "<i>דוגמה: 172.16.0.0/16 10.11.12.0/24</i>"
+
+#~ msgid ""
+#~ "A list of extra options to pppd as would be typed on the command line"
+#~ msgstr "רשימה של אפשרויות נוספות עבור pppd כפי שהן נרשמות בשורת הפקודה"
+
+#~ msgid "C_hannel:"
+#~ msgstr "_ערוץ:"
+
+#~ msgid "Compression & Encryption"
+#~ msgstr "כיווץ והצפנה"
+
+#~ msgid "Connection"
+#~ msgstr "חיבור"
+
+#~ msgid "Connection na_me:"
+#~ msgstr "_שם חיבור:"
+
+#~ msgid "Custom _PPP options:"
+#~ msgstr "אפשרויות _PPP מותאמות:"
+
+#~ msgid "Debug _output"
+#~ msgstr "_פלט ניפוי"
+
+#~ msgid "Find Device"
+#~ msgstr "חפש התקן"
+
+#~ msgid "GPRS Options"
+#~ msgstr "אפשרויות GPRS"
+
+#~ msgid "Host name or IP address of the L2TP server"
+#~ msgstr "שם מארח או כתובת IP של שרת ה-L2TP"
+
+#~ msgid "IP a_ddress:"
+#~ msgstr "כתובת _IP:"
+
+#~ msgid ""
+#~ "If BSD compression is not allowed the 'nobsdcomp' option is passed to pppd"
+#~ msgstr "אם כיווץ BSD אינו מורשה האפשרות 'nobsdcomp' מועברת ל-pppd"
+
+#~ msgid "Maximum Receive Unit"
+#~ msgstr "גודל יחידת קבלה מקסימאלי"
+
+#~ msgid "Maximum Transmit Unit"
+#~ msgstr "גודל יחידת שליחה מקסימאלי"
+
+#~ msgid "Refuse C_HAP"
+#~ msgstr "דחה C_HAP"
+
+#~ msgid "Refuse _EAP"
+#~ msgstr "דחה _EAP"
+
+#~ msgid "Refuse _MS CHAP"
+#~ msgstr "דחה _MS CHAP"
+
+#~ msgid "Require 128 bit M_PPE encryption"
+#~ msgstr "דרוש הצפנת M_PPE ‏128 סיבית"
+
+#~ msgid "Require MPPE _encryption"
+#~ msgstr "דרוש הצפנת _MPPE"
+
+#~ msgid "Routing"
+#~ msgstr "ניתוב"
+
+#~ msgid "Serial Options"
+#~ msgstr "אפשרויות חיבור טורי"
+
+#~ msgid "Service providers IP address"
+#~ msgstr "כתובת IP של ספק השירות"
+
+#~ msgid "Telep_hone number:"
+#~ msgstr "מספר ט_לפון:"
+
+#~ msgid "Time in seconds between echo requests"
+#~ msgstr "הזמן בשניות בין בקשות הד"
+
+#~ msgid "Typ_e:"
+#~ msgstr "_סוג:"
+
+#~ msgid "When checked the \"refuse-chap\" option is passed to pppd."
+#~ msgstr "כאשר מסומן האפשרות \"refuse-chap\" מועברת ל-pppd."
+
+#~ msgid "When checked the \"refuse-eap\" option is passed to pppd."
+#~ msgstr "כאשר מסומן האפשרות \"refuse-eap\" מועברת ל-pppd."
+
+#~ msgid "When checked the \"refuse-mschap\" option is passed to pppd."
+#~ msgstr "כאשר מסומן האפשרות \"refuse-mschap\" מועברת ל-pppd."
+
+#~ msgid "When checked the 'lock' option is passed to pppd"
+#~ msgstr "כאשר מסומן האפשרות \"lock\" מועברת ל-pppd."
+
+#~ msgid "When checked the 'require-mppc' option is passed to pppd"
+#~ msgstr "כאשר מסומן האפשרות \"require-mppc\" מועברת ל-pppd."
+
+#~ msgid "When checked this sets the pppd 'noipdefault' option"
+#~ msgstr "כאשר מסומן האפשרות \"noipdefault\" מועברת ל-pppd."
+
+#~ msgid "When checked this sets the pppd 'usepeerdns' option"
+#~ msgstr "כאשר מסומן האפשרות \"usepeerdns\" מועברת ל-pppd."
+
+#~ msgid ""
+#~ "When this check box is cleared the \"noauth\" option is passed to pppd."
+#~ msgstr "כאשר מסומן האפשרות \"noauth\" מועברת ל-pppd."
+
+#~ msgid "_Access point name:"
+#~ msgstr "שם _נקודת גישה:"
+
+#~ msgid "_Device address:"
+#~ msgstr "_כתובת התקן:"
+
+#~ msgid "_Import Saved Configuration..."
+#~ msgstr "_יבא הגדרות שמורות..."
+
+#~ msgid "_Modem connection"
+#~ msgstr "חיבור _מודם"
+
+#~ msgid "_Packet type:"
+#~ msgstr "_סוג חבילה:"
+
+#~ msgid "_Require MPPC compression"
+#~ msgstr "דרוש כיווץ _MPPC"
+
+#~ msgid "Name"
+#~ msgstr "שם"
+
+#~ msgid "L2TP Server"
+#~ msgstr "שרת L2TP"
+
+#~ msgid "Telephone Number"
+#~ msgstr "מספר טלפון"
+
+#~ msgid "Bluetooth Address"
+#~ msgstr "כתובת Bluetooth"
+
+#~ msgid "Bluetooth Channel"
+#~ msgstr "ערוץ Bluetooth"
+
+#~ msgid "GPRS APN"
+#~ msgstr "GPRS APN"
+
+#~ msgid "GPRS IP"
+#~ msgstr "GPRS IP"
+
+#~ msgid "Connect via a modem"
+#~ msgstr "התחבר בעזרת מודם"
+
+#~ msgid "Use 128 bit MPPE encryption"
+#~ msgstr "השתמש בהצפנת MPPE 128bit"
+
+#~ msgid "Do not use BSD compression"
+#~ msgstr "אל תשתמש בכיווץ BSD"
+
+#~ msgid "Refuse EAP"
+#~ msgstr "דחה EAP"
+
+#~ msgid "Refuse CHAP"
+#~ msgstr "דחה CHAP"
+
+#~ msgid "Maximum transmit unit (in bytes)"
+#~ msgstr "גודל יחידת שליחה מקסימאלי (בבתים)"
+
+#~ msgid "Maximum receive unit (in bytes)"
+#~ msgstr "גודל יחידת קבלה מקסימאלי (בבתים)"
+
+#~ msgid "Custom PPP options"
+#~ msgstr "אפשרויות PPP מותאמות"
+
+#~ msgid "The following '%s' connection will be created:"
+#~ msgstr "חיבור ה-'%s' הבא יווצר:"
+
+#~ msgid "\t%s:  %s\n"
+#~ msgstr "\t%s:  %s\n"
+
+#~ msgid "Select file to import"
+#~ msgstr "בחר קובץ ליבוא"
+
+#~ msgid "Save as..."
+#~ msgstr "שמור בשם..."
+
+#~ msgid "A file named \"%s\" already exists."
+#~ msgstr "קובץ בשם \"%s\" כבר קיים"
+
+#~ msgid "Do you want to replace it with the one you are saving?"
+#~ msgstr "האם להחליפו בקובץ שאתה מנסה לשמור?"
